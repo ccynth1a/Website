@@ -58,3 +58,14 @@ div.container div {
   width: 33%;
   float: left;
 }
+
+.contactInfo {
+  text-align: center;
+  color: white;
+}
+.contactInfo a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  display: block;
+}
