@@ -16,6 +16,10 @@ button {
   width: 150px;
 }
 
+.dropbtn {
+  width: 215px;
+}
+
 .menubutton {
   background-color: #0e1d35;
   box-shadow: 5px;
@@ -43,9 +47,8 @@ button {
   text-decoration: none;
 }
 
-.dropdown-content a:hover {background-color: grey;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
+.dropdown:hover .dropbtn {background-color: #0e1d35;}
 
 
 div.container {
