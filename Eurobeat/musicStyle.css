@@ -1,0 +1,57 @@
+/* Custom Classes Here */
+.floatLinks a {
+  float: left;
+  padding: 12px;
+  display: block;
+  background-color: darkgrey;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 5px, black;
+  height: 100%;
+}
+
+.audioBlock {
+  float: left;
+  padding: none;
+  display: block;
+  background-color: darkgrey;
+  margin: 3px;
+  font-size: 8px;
+  box-shadow: black;
+}
+
+.davePageTitle {
+  font-size: 70px;
+  color: white;
+}
+
+.davePageText {
+  float: right;
+  font-size: 70px;
+  color: white;
+}
+/*Container Stuff*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerImg {
+  flex-basis: 40%;
+}
+
+.containerText {
+  padding-left: 20px;
+}
+
+
+
+/*Basic Webpage Styling*/ 
+body {
+  font-family: monospace;
+  font-size: 17px;
+}
+
+
