@@ -3,11 +3,11 @@
   float: left;
   padding: 12px;
   display: block;
-  background-color: darkgrey;
+  background-color: white;
   margin: 5px;
   text-decoration: none;
-  color: white;
-  box-shadow: 5px, black;
+  color: black;
+  box-shadow: 5px, white;
   height: 100%;
 }
 
@@ -15,10 +15,12 @@
   float: left;
   padding: none;
   display: block;
-  background-color: darkgrey;
+  background-color: white;
+  color: black;
   margin: 3px;
   font-size: 8px;
-  box-shadow: black;
+  box-shadow: 5px, white;
+  text-align: center;
 }
 
 .davePageTitle {
@@ -50,8 +52,11 @@
 
 /*Basic Webpage Styling*/ 
 body {
-  font-family: monospace;
+  font-family: DOS;
   font-size: 17px;
+  background-color: black;
+  color: white;
 }
 
-
+/*Fonts*/
+ @font-face { font-family: DOS; src: url('Assets/dosFont.ttf'); } 
