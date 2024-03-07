@@ -26,14 +26,17 @@
   outline-width: 4px;
   align-items: center;
   position: relative;
-  width: 30%;
   text-align: center;
 }
 
 .audioContainer {
   display: flex;
   justify-content: center;
+  padding-right: 20px;
+}
 
+.audioBlock audio {
+  padding-left: 50px;
 }
 
 .davePageTitle {
@@ -71,7 +74,6 @@
 .containerText {
   padding-left: 20px;
 }
-
 
 
 /*Basic Webpage Styling*/ 
