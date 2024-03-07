@@ -16,7 +16,7 @@
 
 .audioBlock {
   float: left;
-  padding: none;
+  padding: 10px;
   display: block;
   background-color: #0200AD;
   color: white;
@@ -24,15 +24,22 @@
   font-size: 8px;
   outline-style: double;
   outline-width: 4px;
+  align-items: center;
+  position: relative;
+  width: 30%;
   text-align: center;
+}
+
+.audioContainer {
+  display: flex;
+  justify-content: center;
+
 }
 
 .davePageTitle {
   font-size: 70px;
   color: white;
 }
-
-
 
 .davePageText {
   float: right;
@@ -43,10 +50,19 @@
 
 .container {
   display: flex;
+  padding: 10px;
+  margin: 10px;
   align-items: center;
   justify-content: center;
   background-color: grey;
-  opacity: 50%;
+  opacity: 90%;
+  outline-style: ridge;
+}
+
+.container h3 {
+  font-size: 25px;
+  white-space: nowrap;
+  padding-right: 9px;
 }
 .containerImg {
   flex-basis: 40%;
