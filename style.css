@@ -19,9 +19,12 @@ button {
 /*Custom Classes*/
 .projects {
   display: flex;
+  width: 100%;
+}
+
+.projectRow {
+  display: flex;
   float: left;
-
-
 }
 
 .projectSeperator {
@@ -30,7 +33,7 @@ button {
   display: block;
   padding: 20px;
   margin: 20px;
-  width: 40%;
+  width: 30%;
   height: auto;
   text-wrap: pretty;
 }
