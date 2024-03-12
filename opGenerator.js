@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "Ram", "Brava", "Grim", "Sens", "Osa", "Flores", "Zero", "Ace", "Iana", "Kali",
       "Amaru", "Nokk", "Gridlock", "Nomad", "Maverick", "Lion", "Finka", "Dokkaebi",
       "Zofia", "Ying", "Jackal", "Hibana", "Capitao", "Blackbeard", "Buck", "Sledge",
-      "Thatcher", "Ash", "Thermite", "Montagne", "Twitch", "Blitz", "IQ", "Fuze", "Glaz"
+      "Thatcher", "Ash", "Thermite", "Montagne", "Twitch", "Blitz", "IQ", "Fuze", "Glaz", "Deimos"
   ];
     
     const defendingOpsList = [
@@ -124,6 +124,9 @@ document.addEventListener("DOMContentLoaded", function() {
             break;
         case "Glaz":
             imgUrl = 'Assets/glaz.png';
+            break;
+        case "Deimos":
+            imgUrl = 'Assets/deimos.png'
             break;
 
         // Defending Operators
