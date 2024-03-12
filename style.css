@@ -1,12 +1,14 @@
 /*Regular CSS Elements*/
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  background-color: white;
+  font-family: DOS;
+  font-size: 17px;
+  color: white;
+  background-color: black;
 }
 
 button {
   background-color: black; 
+  font-family: DOS;
   box-shadow: 5px; 
   color: white;
   padding: 10px 27px;
