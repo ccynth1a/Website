@@ -65,3 +65,7 @@ button {
 .containerText {
   padding-left: 20px;
 }
+
+.opBox {
+  width: 50px;
+}
