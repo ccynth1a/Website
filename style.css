@@ -17,11 +17,22 @@ button {
   width: 150px;
 }
 /*Custom Classes*/
+.projects {
+  display: flex;
+  float: left;
+
+
+}
+
 .projectSeperator {
+  border-style: solid;
   background-color: lightgrey;
   display: block;
   padding: 20px;
   margin: 20px;
+  width: 40%;
+  height: auto;
+  text-wrap: pretty;
 }
 
 .contactInfo {
