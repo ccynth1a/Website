@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
       "Smoke", "Castle", "Pulse", "Doc", "Rook", "Jager", "Bandit", "Tachanka", "Kapkan"
   ];
     function operatorImageUpdate(randomOp) {
-    let imgUrl;
-
-    switch (randomOp) {
+      let imgUrl;
+      imgUrl = "Assets/" + randomOp + ".png";
+    //Legacy Code that I've kept in because its fucking hilarious
+    /*switch (randomOp) {
         // Attacking Operators
         case "Ram":
             imgUrl = 'Assets/ram.png';
@@ -237,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
             break;
 
     }
-
+*/
     // Set the image source to the determined URL
     document.getElementById('operatorImg').src = imgUrl;
 }

@@ -70,3 +70,6 @@ button {
 .opBox {
   width: 50px;
 }
+
+/*Fonts*/
+@font-face { font-family: DOS; src: url('Assets/dosFont.ttf'); } 
