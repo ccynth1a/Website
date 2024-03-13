@@ -7,10 +7,11 @@ body {
 }
 
 button {
-  background-color: black; 
+  background-color: #0000aa; 
   font-family: DOS;
   box-shadow: 5px; 
   color: white;
+  border-style: double;
   padding: 10px 27px;
   text-align: center;
   text-decoration: none;
@@ -31,7 +32,7 @@ button {
 
 .projectSeperator {
   border-style: solid;
-  background-color: lightgrey;
+  background-color: #0000aa;
   display: block;
   padding: 20px;
   margin: 20px;
