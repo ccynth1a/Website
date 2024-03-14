@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
     function operatorImageUpdate(randomOp) {
       let imgUrl;
-      ﻿imgUrl = "Assets/" + randomOp + ".png";
+      imgUrl = "Assets/" + randomOp + ".png";
     //Legacy Code that I've kept in because its fucking hilarious
     /*switch (randomOp) {
         // Attacking Operators
