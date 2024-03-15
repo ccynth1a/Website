@@ -84,6 +84,15 @@ button:hover{background-color: red;}
 
 .opBox {
   width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outputBox {
+  padding-top: 155px;
+  text-align: center;
+  font-size: 30px;
 }
 
 /*Forza Gallery Classes*/
