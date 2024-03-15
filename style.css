@@ -78,6 +78,10 @@ button:hover{background-color: red;}
   padding-left: 20px;
 }
 
+.containerText button {
+  width: 100%;
+}
+
 .opBox {
   width: 50px;
 }
@@ -119,7 +123,7 @@ div.desc {
 
 @media only screen and (max-width: 700px) {
   body {
-    font-size: 11px;
+    font-size: 12px;
   }
   .projectSeperator {
     height: 30%;
