@@ -17,7 +17,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 150px;
+  width: 100%;
   height: 75px;
   border-width: medium;
 }
@@ -33,6 +33,8 @@ button:hover{background-color: red;}
 .projectRow {
   display: flex;
   float: left;
+  flex-wrap: wrap;
+  height: 20%;
 }
 
 .projectSeperator {
@@ -42,7 +44,7 @@ button:hover{background-color: red;}
   padding: 20px;
   margin: 20px;
   width: 30%;
-  height: auto;
+  height: 40%;
   text-wrap: pretty;
 }
 
@@ -115,6 +117,16 @@ div.desc {
 
 
 @media only screen and (max-width: 700px) {
+  body {
+    font-size: 11px;
+  }
+  .projectSeperator {
+    height: 30%;
+    width: auto;
+  }
+  .contactInfo {
+    font-size: 10px;
+  }
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
