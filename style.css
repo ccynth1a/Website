@@ -80,6 +80,7 @@ button:hover{background-color: red;}
 
 .containerText button {
   width: 100%;
+  font-size: 20px;
 }
 
 .opBox {
