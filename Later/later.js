@@ -1,10 +1,10 @@
 /*We Learned da lesson this time and will actually wait till the shits loaded*/
 document.addEventListener("DOMContentLoaded", function(){
 //Global Vars, had some scope issues so fuck you
-let s_Hours, s_Minutes, e_Hours, e_Minutes, outBlock;
-button = document.getElementById('clickybutton');
+let s_Hours, s_Minutes, e_Hours, e_Minutes, outBlock; //Vars for start 's' and end 'e'
+button = document.getElementById('clickybutton'); //b u t t o n
 
-
+// if NaN, returns true.
 function isInputNaN() {
   if (isNaN(s_Hours) || isNaN(s_Minutes) || isNaN(e_Hours) || isNaN(e_Minutes)) {
     console.log("Non Integers Detected.");
@@ -15,6 +15,7 @@ function isInputNaN() {
   return false;
 };
 
+//Is the input in an acceptable range. Actually redundant cos i figured out how fieldsets work
 function isInputRange() {
   /*This is a really fucking long if statement gonna kms*/
 
@@ -29,6 +30,7 @@ if (
   return true;
 } else {
   console.log("Values Out Of Range");
+  //Err block is just a text output box to help debug
   document.getElementById('errBlock').innerHTML = "Values Out Of Range";
   return false;
 }
@@ -40,7 +42,7 @@ function random_Hour(min, max) {
   //Generates random num between min and max inclusive.
   randomNum = Math.floor(Math.random() * (max - min + 1) ) + min;
   if (randomNum < 10) {
-    return "0"+randomNum; //For making sure it looks like time
+    return "0"+randomNum; //For making sure it looks like time. important to note this is str concat, not adding the value of 0. fuck you javascript
   }
   return randomNum;
 };
@@ -103,7 +105,7 @@ function parseTime(s_Hours, s_Minutes, e_Hours, e_Minutes) {
 
 };
 
-
+/* Returns the time formatted in [hour] then [minutes] as an array, which is accessed later. think this might be where the issue is*/
 function timeDiff(ranNum) {
   let hoursDiff = Math.floor(ranNum / 60);
   console.log(hoursDiff);
@@ -114,10 +116,51 @@ function timeDiff(ranNum) {
 };
 
 
+let fHours, fMinutes, ranNum, minsDiff;
+
+function hours(increment) {
+  if ((s_Hours + timeDiff(ranNum)[0] + increment) < 10) {
+    fHours = "0" + (s_Hours + timeDiff(ranNum)[0] + increment);
+  } else {
+    fHours = (s_Hours + timeDiff(ranNum)[0] + increment);
+  };
+};                                                      
 
 
-document.getElementById("timeForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // stop refresh???? 
+
+
+
+
+function minutes() {
+  let totalMinutes = s_Minutes + timeDiff(ranNum)[1];
+  
+  // If adding minutes exceeds 60, adjust hours and minutes accordingly
+  if (totalMinutes >= 60) {
+    hours(1); // Increment hours
+    fMinutes = totalMinutes - 60; // Subtract 60 from total minutes
+  } else {
+    fMinutes = totalMinutes;
+  }
+
+  // Format minutes with leading zero if necessary
+  fMinutes = fMinutes < 10 ? "0" + fMinutes : fMinutes;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("timeForm").addEventListener("submit", function(event) { //Wait for submission form
+  event.preventDefault(); // dont immediately reload page
   /*Update The Variables*/
   s_Hours = parseInt(document.getElementById("s_Hours").value);
   s_Minutes = parseInt(document.getElementById("s_Minutes").value);
@@ -129,28 +172,17 @@ document.getElementById("timeForm").addEventListener("submit", function(event) {
     console.log("Successful form submission");
     
     //Parses minute difference
-    let minsDiff = parseTime(s_Hours, s_Minutes, e_Hours, e_Minutes)
+    minsDiff = parseTime(s_Hours, s_Minutes, e_Hours, e_Minutes)
     console.log("Parsed Time Returned: " + minsDiff)
 
     //Generate a random amount of minutes in the difference between the two
-    let ranNum = Math.floor(Math.random() * (minsDiff+1));
+    ranNum = Math.floor(Math.random() * (minsDiff+1));
     console.log("randomNum: " + ranNum)
+    
 
-    //Calculationy stuff!!!!
-    let fHours, fMinutes
-    if ((s_Hours + timeDiff(ranNum)[0]) < 10) {
-      fHours = "0" + (s_Hours + timeDiff(ranNum)[0]);
-    } else {
-      fHours = (s_Hours + timeDiff(ranNum)[0]);
-    };
-
-    if ((s_Minutes + timeDiff(ranNum)[1]) < 10) {
-      fMinutes = "0" + (s_Minutes + timeDiff(ranNum)[1]);
-    } else {
-      fMinutes = (s_Minutes + timeDiff(ranNum)[1]);
-    };
-
-
+    //Calculationy stuff!!!! formats time into a nice way to read 
+    hours(0);
+    minutes();
 
     let fTime = fHours + ":" + fMinutes;
 
