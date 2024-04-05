@@ -116,9 +116,9 @@ function timeDiff(ranNum) {
 };
 
 
-let fHours, fMinutes, ranNum, minsDiff;
+let fHours, fMinutes, ranNum, minsDiff; //dont ask why these are global. i dont know either.
 
-function hours(increment) {
+function hours(increment) { //Increment is a dumb bodged solution i made to a problem with the variable VASTLY exceeding 60. also this function syntax is dumb and i should really make that long ass condition into a variable but fuck you
   if ((s_Hours + timeDiff(ranNum)[0] + increment) < 10) {
     fHours = "0" + (s_Hours + timeDiff(ranNum)[0] + increment);
   } else {
@@ -134,7 +134,7 @@ function hours(increment) {
 function minutes() {
   let totalMinutes = s_Minutes + timeDiff(ranNum)[1];
   
-  // If adding minutes exceeds 60, adjust hours and minutes accordingly
+  // If adding minutes exceeds 60, adjust the hours with a function call
   if (totalMinutes >= 60) {
     hours(1); // Increment hours
     fMinutes = totalMinutes - 60; // Subtract 60 from total minutes
@@ -181,11 +181,9 @@ document.getElementById("timeForm").addEventListener("submit", function(event) {
     
 
     //Calculationy stuff!!!! formats time into a nice way to read 
-    hours(0);
-    minutes();
-
+    hours(0); //Formates the fHours variable
+    minutes(); //Does the same but for minutes
     let fTime = fHours + ":" + fMinutes;
-
     outBlock.innerHTML = fTime;
 
     
