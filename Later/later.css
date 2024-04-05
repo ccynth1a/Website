@@ -1,0 +1,28 @@
+body {
+  color: white;
+  background-color: black;  
+  font-family: Ubuntu;
+}
+
+input {
+  font-family: Ubuntu;
+}
+
+button {
+  font-family: Ubuntu;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+
+/*Fonts*/
+@font-face { font-family: Ubuntu; src: url('../Assets/Ubuntu-Regular.ttf'); } 

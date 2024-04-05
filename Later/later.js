@@ -116,7 +116,8 @@ function timeDiff(ranNum) {
 
 
 
-button.addEventListener('click', function() {
+document.getElementById("timeForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // stop refresh???? 
   /*Update The Variables*/
   s_Hours = parseInt(document.getElementById("s_Hours").value);
   s_Minutes = parseInt(document.getElementById("s_Minutes").value);
