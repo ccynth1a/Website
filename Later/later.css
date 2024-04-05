@@ -10,6 +10,7 @@ input {
 
 button {
   font-family: Ubuntu;
+  float: center
 }
 
 footer {
@@ -22,6 +23,17 @@ footer {
     font-size: 12px;
   }
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+
+
 
 
 /*Fonts*/
