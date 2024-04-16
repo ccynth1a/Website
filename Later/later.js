@@ -66,7 +66,7 @@ function random_Minute(min, max, hour) {
 /* LOGIC FOR PARSING FUNCTION
 are the hours the same?
 
-if y just work out the min diff and return
+if y just work out the minute diff and return
 
 ////
 
