@@ -1,0 +1,22 @@
+body {
+  background-color: #222222; /*Grey*/
+  color: #F76C7C; /*Salmon*/
+} 
+
+h1 {
+  color: #766AB3;
+}
+b {
+  color: #50B7A6 /*Blue*/
+}
+
+a {
+  color: #7CE062; /*Green*/ 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C2714D; /*Orange*/
+}
+
+
