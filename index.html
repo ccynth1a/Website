@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-  <title>CCynth1a</title>
-  <link rel="stylesheet" href="monokai-pro.css">
-  </head>
-<style>
-@font-face { font-family: Ubuntu-Regular; src: url('Assets/Ubuntu-Regular.ttf'); } 
-body {
-  font-family: Ubuntu-Regular;
-}
+<html lang="en">
 
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCynth1a's Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <h1><a href="index.html">C:\Users\CCynth1a\index.html</a></h1>
-<h1>Welcome</h1>
-<p>Hi! If you're using this site chances are you're either a friend of mine or I'm showing you something. This is just a website for me to put all of my projects into, as listed below. Important to note that I am <b>NOT</b> a web dev, and my graphic design ability is next to non-existent, so this will function more like a <b>"Document Viewer"</b> than an actual website. If you have any suggestions please contact me on GitHub or my Email (at the bottom of the page) <br> -CCynth1a she/her :3</p>
+    <div id="container">
+        <div id="header">
+            <h1>CCynth1a's Site</h1>
+            <p>Welcome to my website! Chances are if you find yourself here you're either my friend or I'm showing you something. This is just a place for me to archive my thoughts and projects, as well as talk about topics I'm interested in on my blog!</p>
+        </div>
 
-<h1>Projects</h1>
-<hr>
-<a href="r6randomiser.html"><h2>Rainbow Six Siege Randomiser</h2></a>
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="blog-posts.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
 
-<p>I noticed that there wasn't an <b>up-to-date randomiser for Rainbow Six</b>, and since Ubisoft stupidly decided to disable the operator randomiser in Standard matches, I just made one myself. This is my...second<b>(?)</b> time making something in JavaScript, and its probably some of the worst code I've ever written. <br> <br> <b>Addendum 2024-03-13: </b>I fixed it, the logic is no longer awful, I've kept the original in there for me to laugh at <br> <br> <b>Last Updated: Y9S1</b></p>
-<hr>
+        <div id="content">
+            <h2 id="about">About Me</h2>
+            <p>Hi! I'm CCynth1a (The first C stands for Charlotte), and I'm a computer science student from the UK, relatively new to programming, I only really started it seriously about a year ago. <br><br>Over the last year or so it has become my primary hobby, and I'm currently learning several languages and working on some really fun projects. Namely I'm interested in C, its simplicity is very appealing to me as I'm not a huge fan of the levels of abstraction that high-level languages provide, though as a beginner this obviously does limit the scope of the kind of projects and applications I can work on. I'm also learning Go, and eventually plan to learn Rust, though it's not exactly the most beginner friendly language.<br><br>I am interested in things other than programming though! It fluctuates, but my current interests are things like aviation history, retro computing and linux! As most people are, I'm also quite into music, mostly metal and alternative rock; my favourite album is probably Nightfall in Middle Earth by Blind Guardian. <br><br>To make sure that I hit absolutely all of the stereotypes, I'm also transfemme, I came out a couple years ago, and have since been fighting the world to get any sort of treatment! I have two Blahajs, Gill Clinton and Osama Fin Laden, and then one Djungelskog called Bearrack Obama!</p>
+            
 
-<a href="https://github.com/ccynth1a/Mako"><h2>Mako</h2></a>
+            <h2>Latest Blog Post</h2>
+            <div id="recent-blog"></div> <!--This is a placeholder container for the full post. Note that it DOES NOT work locally-->
 
-<p>A <b>basic web server</b>, but by far the beefiest project I've worked on up to this point, and also the clunkiest. Quite a bit of the code has been stolen and malformed from various sources into a Frankenstein's monster of a program that PROBABLY does what it's meant to, but I'm proud of it regardless. More information can be found in the <a href="https://github.com/ccynth1a/Mako/blob/main/README.md">README</a>. <br> <br> <b>Last Updated: 2024-06-10</b></p>
-<hr>
+            <h2 id="contact">Contact Me</h2>
+            <p>Email: <a href="mailto:charlottetorvell@protonmail.com">charlottetorvell@protonmail.com</a></p>
+            <p>Github: <a href="https://github.com/ccynth1a">CCynth1a</a></p>
+        </div>
 
-<a href="https://github.com/ccynth1a/timber"><h2>timber</h2></a>
-
-<p>Timber is just a <b>C logger library</b> for personal usage, but I've put it on Github so I can more easily clone it from my different computers. It will have a few more features added over time, but for now it's in a workable state and I'm happy with it! Hopefully my progress in C from the last project to this one is evident <br> <br> <b>Last Updated: 2024-09-11</b></p>
-<hr>
-
-<a href="https://github.com/ccynth1a/proverbs-go"><h2>proverbs-go</h2></a>
-
-<p><b>A rewrite of the UNIX program "Fortune"</b>, Proverbs is the result of my first day learning Go. So far it's been amazing, the language seems about halfway between C and Python, it's definitely got a focus on readability of syntax too. Honestly the most amazing thing is not having segfaults every time I use strings; this program is pretty string heavy, yet I didn't have a single crash. And portable networking code??? That only takes like 2 functions??? Not sure if this is heresy or not. Hoping to learn more Go in the future, but for now Proverbs is gonna stay public until I make something impressive (in the works). <br> <br> <b>Last Updated: 2024-09-25</b></p>
-<hr>
-<footer>
-<h2>Contact Info</h2>
-<a href="mailto:charlottetorvell@protonmail.com?subject=Contact%20from%20Website"><b>Email Me</b></a> <br>
-<a href="https://phlobism.github.io"><b>My Bitch Wife's Site</b></a>
-</footer>
+        <div id="footer">
+            <p>2024 CCynth1a - Created with love for the old web.</p>
+            <p><a href="#top">Back to Top</a></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
 </html>
-  
+
