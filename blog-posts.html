@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CCynth1a's Blog</h1>
+            <p>Prepare for ramblings! Most of these posts are incoherent and are usually just miscellaneous things I'm interested in, plus news about coding projects I'm working on.</p>
+        </div>
+
+        <div id="nav">
+            <a href="index.html">Back To Home</a>
+        </div>
+
+        <div id="content">
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="assets/minesweeper.jpg" alt="Post Image">
+                </div>
+                <h2 class="post-title">CLI-Minesweeper v1.0.0 Release</h2>
+                <p class="post-date">October 3, 2024</p>
+                <div class="post-content">
+                  <p>Honestly, coding this was so fun. Doing it in C was borderline masochistic considering how much I had to safeguard against segfaults, but in the end it works pretty well! I still need to implement the help menu, but besides that its completed. This small little "project" (it's way too small to be a full one) was mainly born out of boredom; classes at the moment are long and mostly recap, so there's a lot of downtime after I finish the assigned tasks. My girlfriend is currently working on her own version too, not sure if that'll be posted to Github but it has a lot a much prettier interface since she actually knows how to use ANSI escape codes.
+                  Honestly my favourite part was the recursive function to create that "cascade" effect when you get a lot of clears at once. I'm a sucker for recursion even if does add complexity:
+<pre><code>int check_squares(int x, int y)
+{
+  // first check that input is in expected range.
+  if (x < 0 || y < 0 || x > X_MAX || y > Y_MAX) {
+    return -1; // return -1 if the user is being a dickhead
+  }
+  if (visited[y][x]) {
+    return 0; // recursively return if the cell has already been visited
+  }
+  visited[y][x] = true;// if not visited, then mark it as so
+  if (pBoard->true_layout[y][x] != MINE) {
+    pBoard->display[y][x] = pBoard->true_layout[y][x];// change the displayed character to be the real character
+  }
+  
+  if (pBoard->true_layout[y][x] != EMPTY) { // reveal numbers (should not reveal bombs)
+    return 0;
+  }
+
+  int directions[4][2] = { // all the cardinal directions mapped out for usage in iteration. Honestly no feckin clue which order its in
+    {1,0}, {0,1}, {-1,0}, {0,-1}
+  };
+ 
+  for (int i = 0; i < 4; i++) {
+    int new_x = x + directions[i][0];
+    int new_y = y + directions[i][1];
+    if (new_x >= 0 && new_x < X_MAX && new_y >= 0 && new_y < Y_MAX) { // segfault guarding
+    check_squares(new_x, new_y);
+    }
+  }
+}</code></pre></p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+            <p>2024 CCynth1a - Created with love for the old web.</p>
+            <p><a href="#top">Back to Top</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

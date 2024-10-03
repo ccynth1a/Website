@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCynth1a's Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CCynth1a's Projects</h1>
+            <p>This is pretty much all of the personal projects that I think are notable enough to deserve a description. Things will rotate in and out of here, as I make more things that are larger in scope than the ones I'm currently doing. Projects are ordered roughly in order of "impressiveness" and "usefulness"</p>
+        </div>
+
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="#mako">Mako</a>
+            <a href="#timber">Timber</a>
+            <a href="#proverbs-go">Proverbs-Go</a>
+            <a href="#cli-minesweeper">CLI-Minesweeper</a>
+        </div>
+
+        <div id="content">
+            <div id="mako" class="blog-post">
+                <h2 class="post-title"><a href="https://github.com/ccynth1a/Mako">Mako: A Simple C Web Server</a></h2>
+                <p class="post-date">Last Updated: June 10th, 2024</p>
+                <div class="post-content">
+                  <p>Mako is possibly my first big project in C. It's a web server capable of serving content of all types. Unfortunately due to firewall rules I've actually been unable to test it extensively, but I'm reasonably sure it's functional.<br>I really enjoyed making this, it taught me a decent amount about networking and about how the C standard library functions work.</p>
+                </div>
+            </div>
+
+            <div id="timber" class="blog-post">
+              <h2 class = "post-title"><a href="https://github.com/ccynth1a/timber">Timber: A C Debug Logging Library</a></h2>
+              <p class="post-date">Last Updated: September 11th, 2024</p>
+              <div class="post-content">
+                <p>I was kinda dissappointed coming from high-level languages to C, and seeing that there really isn't any utility for debug logging. Segfaults can just kinda...happen sometimes and where most languages would provide a backtrace or some useful information, C just says "good luck". Sure I can just open GDB and run through, but sometimes it's helpful to know where I'm at in the program when the crash occurs specifically. So I made timber! It's pretty much identical in functionality to Python's logging library, spare for a few differences.</p>
+              </div>
+            </div>
+
+            <div id="proverbs-go" class="blog-post">
+              <h2 class = "post-title"><a href="https://github.com/ccynth1a/proverbs-go">Proverbs-Go: Rewrite of the UNIX Program "Fortune"</a></h2>
+              <p class="post-date">Last Updated: September 25th, 2024</p>
+              <div class="post-content">
+                <p>I recently (as of writing) decided to pick up GoLang, through Alan. A. Donovan's GoPL book. This is the result of my first day learning the language, so it's definitely not great but it's certainly functional! Honestly loving the language so far, it gets rid of a bunch of the features I disliked about Python, while managing to keep the ease-of-writing. Portable networking code that takes only two functions?! Strings not causing unbelievable amounts of segfaults?! Literally heresy as far as my C developer brain is concerned.</p>
+              </div>
+            </div>
+
+            <div id="cli-minesweeper" class="blog-post">
+              <h2 class="post-title"><a href="https://github.com/ccynth1a/cli-minesweeper">CLI-Minesweeper: C version of classic Minesweeper</a></h2>
+              <p class="post-date">Last Updated: September 24th, 2024</p>
+              <div class="post-content">
+                <p>As mentioned in my blog, this small little project is mostly born out of boredom, but I had fun writing it regardless. The action syntax is a little weird, but can be dumbed down to [action]-x-y. for example if you wanted to Check A4, the input would be C-a-4. The input is the same for placing a flag (F-A-4). Expect a help menu sometime in the future, but I've been busy with learning Go, and this isn't too impressive a project for me to worry about maintaining it too much</p>
+              </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p>2024 CCynth1a - Created with love for the old web.</p>
+            <p><a href="#top">Back to Top</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
