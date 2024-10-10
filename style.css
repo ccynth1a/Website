@@ -1,8 +1,8 @@
 /* Home page and main content classes */
 body {
     font-family: "Verdana", sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
+    background-color: #211d3b;
+    color: #d1dcdb;
     margin: 0;
     padding: 0;
 }
@@ -17,31 +17,30 @@ pre {
 
 #container {
     width: 80%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     border-radius: 8px;
     padding: 10px;
-    background-color: #ffffff;
-    border: 2px solid #cccccc;
+    background-color: #545d69;
+    border: 2px solid #303446;
 }
 
 #header {
-    background-color: #d0d0d0;
+    background-color: #211d3b;
     padding: 10px;
-    border-bottom: 2px solid #aaaaaa;
+    border-bottom: 2px solid #303446;
 }
 
 #nav {
-    background-color: #e0e0e0;
+    background-color: #211d3b;
     padding: 5px;
-    border: 1px solid #cccccc;
+    border: 1px solid #303446;
     margin-bottom: 10px;
 }
 
 #nav a {
     margin-right: 15px;
     text-decoration: none;
-    color: #0000ee;
 }
 
 #nav a:hover {
@@ -54,7 +53,11 @@ pre {
 
 h1, h2 {
     border-bottom: 1px solid #aaaaaa;
-    color: #333333;
+    color: #d6e4d6;
+}
+
+a {
+  color: #82ec45;
 }
 
 h1 {
@@ -66,12 +69,12 @@ h2 {
 }
 
 #footer {
-    background-color: #d0d0d0;
+    background-color: #303446;
     padding: 10px;
     text-align: center;
     border-top: 2px solid #aaaaaa;
     font-size: 0.9em;
-    color: #555555;
+    color: #d1dcdb;
 }
 
 code {
@@ -84,15 +87,35 @@ code {
 
 /* Blog Post Stuff */
 
+#search-bar-div input[type=text] {
+  padding: 6px;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #d1dcdb;
+  font-size: 17px;
+}
+
+.hidden {
+  display: none;
+}
+
 .blog-post {
-    max-width: 800px; 
+    max-width: 1000px; 
     margin: 20px auto; 
     padding: 20px; 
     border: 1px solid #ddd; 
     border-radius: 8px; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-    background-color: #fff; 
+    background-color: #d1dcdb; 
 }
+
+.blog-post a {
+  color: #d3447f;
+}
+
 
 .post-image {
     position: relative; 
