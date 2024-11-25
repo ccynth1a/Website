@@ -28,6 +28,7 @@
                 
               </div> 
               <h2 class="post-title">Timber (C) V1.3.0 Update</h2>
+              <p class="post-date">November 25, 2024</p>
               <div class="post-content">
                 <p>Finally decided to show Timber some love and stop procrastinating adding format strings. It was a LOT less complicated than I thought it would be in all honesty, it only took an hour or so to implement. The C++ version though? Horrible. Ran into an issue where I cant pass both variadic and default arguments, which makes sense since they both overwrite each other. No biggie though right, just make a wrapper function! NOPE. I need to use __LINE__ and __FUNC__ which obviously by their very nature change constantly. The only possible idea I've come up with so far is to write to a temp file via a Macro when the function is invoked, but that sounds quite complicated and also VERY bodged, so it's probably gonna be a last resort sort of thing. Either way, the C version works brilliantly and is now much nicer to use! No more hefty snprintf everywhere, just specify the level and print whatever you need! I know these projects aren't really impressive at all but I love how much I learn doing them</p>
               </div>
@@ -36,7 +37,7 @@
                 <div class="post-image">
                     <img src="assets/minesweeper.jpg" alt="Post Image">
                 </div>
-                <h2 class="post-title">CLI-Minesweeper v1.0.0 Release</h2>
+                <h2 class="post-title">CLI-Minesweeper</h2>
                 <p class="post-date">October 3, 2024</p>
                 <div class="post-content">
                   <p>Honestly, coding this was so fun. Doing it in C was borderline masochistic considering how much I had to safeguard against segfaults, but in the end it works pretty well! I still need to implement the help menu, but besides that its completed. This small little "project" (it's way too small to be a full one) was mainly born out of boredom; classes at the moment are long and mostly recap, so there's a lot of downtime after I finish the assigned tasks. My girlfriend is currently working on her own version too, not sure if that'll be posted to Github but it has a lot a much prettier interface since she actually knows how to use ANSI escape codes.
